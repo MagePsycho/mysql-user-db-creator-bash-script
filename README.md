@@ -1,6 +1,6 @@
 # MySQL Database, User/Password Creator
 
-This Script helps you to create database, user & password with just one command.
+This Script helps you to create MySQL database, user & password with just one command.
 
 
 ## INSTALL
@@ -42,9 +42,9 @@ In General, basic usage
 ./mysql-create-db-user.sh --database=bash_db2
 ```
 **Notes**  
-In this case MySQL user/pass will be taken from MySQL config file `~/.my.cnf`
+In this case MySQL connector user/pass will be taken from the config file `~/.my.cnf`
 
-Which will output as:
+The command will output as:
 
 ![MySQL DB, User/Password Creator Result](https://github.com/MagePsycho/mysql-user-db-creator-bash-script/raw/master/docs/mysql-user-db-creator-bash-script-result.png "Nginx Virtual Host Creator Result")
 Screentshot - MySQL DB, User/Password Creator Result

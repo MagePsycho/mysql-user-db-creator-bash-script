@@ -169,6 +169,7 @@ Version $VERSION
 
     Examples:
         $(basename $0) --help
+        $(basename $0) [--host="<host-name>"] --database="<db-name>" [--user="<db-user>"] [--pass="<user-password>"]
 
 "
     _printPoweredBy
