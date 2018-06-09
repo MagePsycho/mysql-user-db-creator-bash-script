@@ -6,7 +6,7 @@ This Script helps you to create MySQL database, user & password with just one co
 ## INSTALL
 To install, simply download the script file and give it the executable permission.
 ```
-curl -0 mysql-db-user-creator.sh https://raw.githubusercontent.com/MagePsycho/mysql-user-db-creator-bash-script/master/src/mysql-db-user-creator.sh -o mysql-db-user-creator.sh
+curl -0 https://raw.githubusercontent.com/MagePsycho/mysql-user-db-creator-bash-script/master/src/mysql-db-user-creator.sh -o mysql-db-user-creator.sh
 chmod +x mysql-db-user-creator.sh
 ```
 
