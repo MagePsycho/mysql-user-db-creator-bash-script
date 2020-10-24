@@ -217,12 +217,12 @@ function createMysqlDbUser()
     SQL4="FLUSH PRIVILEGES;"
 
     if [ -f /root/.my.cnf ]; then
-        $BIN_MYSQL -e "${SQL1}${SQL2}${SQL3}${SQL4}"
+        "$BIN_MYSQL" -e "${SQL1}${SQL2}${SQL3}${SQL4}"
     else
         # If /root/.my.cnf doesn't exist then it'll ask for root password
         _arrow "Please enter root user MySQL password!"
         read rootPassword
-        $BIN_MYSQL -h $DB_HOST -u root -p${rootPassword} -e "${SQL1}${SQL2}${SQL3}${SQL4}"
+        "$BIN_MYSQL" -h $DB_HOST -u root -p${rootPassword} -e "${SQL1}${SQL2}${SQL3}${SQL4}"
     fi
 }
 
