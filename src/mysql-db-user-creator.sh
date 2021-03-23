@@ -5,7 +5,7 @@
 #
 # @author   Raj KB <magepsycho@gmail.com>
 # @website  http://www.magepsycho.com
-# @version  0.1.0
+# @version  1.0.0
 
 ################################################################################
 # CORE FUNCTIONS - Do not edit
@@ -216,10 +216,10 @@ function createMysqlDbUser()
     SQL3="GRANT ALL PRIVILEGES ON ${DB_NAME}.* TO '${DB_USER}'@'%';"
     SQL4="FLUSH PRIVILEGES;"
 
-    if [ -f /root/.my.cnf ]; then
+    if [[ -f "${HOME}/.my.cnf" ]]; then
         "$BIN_MYSQL" -e "${SQL1}${SQL2}${SQL3}${SQL4}"
     else
-        # If /root/.my.cnf doesn't exist then it'll ask for root password
+        # If ~/.my.cnf doesn't exist then it'll ask for root password
         _arrow "Please enter root user MySQL password!"
         read rootPassword
         "$BIN_MYSQL" -h $DB_HOST -u root -p${rootPassword} -e "${SQL1}${SQL2}${SQL3}${SQL4}"
@@ -250,7 +250,7 @@ export LANG=C
 
 DEBUG=0 # 1|0
 _debug set -x
-VERSION="0.1.0"
+VERSION="1.0.0"
 
 BIN_MYSQL=$(which mysql)
 
