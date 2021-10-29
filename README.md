@@ -35,7 +35,7 @@ In General, basic usage
 | `user` | same as database name |
 | `password` | randomly generated |
 
-And MySQL credentials for new db/user creation will be taken from the MySQL config file `~/.my.cnf`.  
+And MySQL credentials for new db/user creation will be taken from the MySQL config file `~/.my.cnf` (try [`~/my.cnf` on Windows](https://github.com/r-dbi/RMariaDB/issues/74#issuecomment-418712342)).  
 If you don't have one, you can simply create a `.my.cnf` file in home directory, with
 ```
 [client]
