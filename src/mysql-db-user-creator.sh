@@ -154,7 +154,8 @@ function generatePassword()
 
 function _printUsage()
 {
-    echo -n "$(basename $0) [OPTION]...
+cat << EOF
+$(basename $0) [OPTION]...
 
 Create MySQL db & user.
 Version $VERSION
@@ -171,7 +172,7 @@ Version $VERSION
         $(basename $0) --help
         $(basename $0) [--host="<host-name>"] --database="<db-name>" [--user="<db-user>"] [--pass="<user-password>"]
 
-"
+EOF
     _printPoweredBy
     exit 1
 }
